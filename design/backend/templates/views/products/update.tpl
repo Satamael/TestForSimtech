@@ -1,4 +1,4 @@
-{if $language_direction == "rtl"}
+﻿{if $language_direction == "rtl"}
     {$direction = "right"}
 {else}
     {$direction = "left"}
@@ -512,6 +512,7 @@
 
             {hook name="products:update_addons_section"}
             <div id="content_addons">
+			<p>EAN code будет здесь</p>
                 {hook name="products:detailed_content"}
                 {/hook}
             </div>
