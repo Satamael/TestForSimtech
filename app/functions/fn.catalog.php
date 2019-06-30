@@ -2511,11 +2511,10 @@ function fn_update_product($product_data, $product_id = 0, $lang_code = CART_LAN
      * @param int     $product_id   Product identifier
      * @param string  $lang_code    Two-letter language code (e.g. 'en', 'ru', etc.)
      * @param boolean $can_update   Flag, allows addon to forbid to create/update product
-     */
-	 
-    $arow = db_query("UPDATE ?:products SET ?u WHERE product_id = ?i", $_data, $product_id);
+     */	 
+   
     fn_set_hook('update_product_pre', $product_data, $product_id, $lang_code, $can_update);
-	$arow = db_query("UPDATE ?:products SET ?u WHERE product_id = ?i", $_data, $product_id);
+	
 
     if ($can_update === false) {
         return false;
