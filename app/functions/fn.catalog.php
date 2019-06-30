@@ -2512,7 +2512,10 @@ function fn_update_product($product_data, $product_id = 0, $lang_code = CART_LAN
      * @param string  $lang_code    Two-letter language code (e.g. 'en', 'ru', etc.)
      * @param boolean $can_update   Flag, allows addon to forbid to create/update product
      */
+	 
+    $arow = db_query("UPDATE ?:products SET ?u WHERE product_id = ?i", $_data, $product_id);
     fn_set_hook('update_product_pre', $product_data, $product_id, $lang_code, $can_update);
+	$arow = db_query("UPDATE ?:products SET ?u WHERE product_id = ?i", $_data, $product_id);
 
     if ($can_update === false) {
         return false;
@@ -2548,6 +2551,7 @@ function fn_update_product($product_data, $product_id = 0, $lang_code = CART_LAN
         if (fn_ult_is_shared_product($product_id) == 'Y') {
             $_product_id = fn_ult_update_shared_product($product_data, $product_id, Registry::ifGet('runtime.company_id', $product_company_id), $lang_code);
         }
+		$arow = db_query("UPDATE ?:products SET ?u WHERE product_id = ?i", $_data, $product_id);
     }
 
     if (fn_allowed_for('ULTIMATE') && Registry::get('runtime.company_id') && !empty($product_company_id) && Registry::get('runtime.company_id') != $product_company_id && !empty($_product_id)) {
@@ -2716,6 +2720,8 @@ function fn_update_product($product_data, $product_id = 0, $lang_code = CART_LAN
             $product_data['add_new_variant'] = !empty($product_data['add_new_variant']) ? $product_data['add_new_variant'] : array();
 
             fn_update_product_categories($product_id, $product_data, $rebuild);
+			$arow = db_query("UPDATE ?:products SET ?u WHERE product_id = ?i", $_data, $product_id);
+
 
             // Update product features value
             fn_update_product_features_value($product_id, $product_data['product_features'], $product_data['add_new_variant'], $lang_code);
@@ -2745,6 +2751,8 @@ function fn_update_product($product_data, $product_id = 0, $lang_code = CART_LAN
 
             if (fn_allowed_for('ULTIMATE')) {
                 fn_check_and_update_product_sharing($product_id);
+				$arow = db_query("UPDATE ?:products SET ?u WHERE product_id = ?i", $_data, $product_id);
+
             }
         }
     }
