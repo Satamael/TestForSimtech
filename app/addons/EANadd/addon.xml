@@ -8,4 +8,14 @@
   <status>active</status>
   <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
   <default_language>en</default_language>
+
+  <language_variables>
+    <item lang="en" id="EANcode">EAN code</item>
+    <item lang="ru" id="EANcode">EAN код</item>
+  </language_variables>
+
+  <queries>
+    <item>ALTER TABLE `?:products` ADD `EANcode` varchar(255) NOT NULL default ''</item>
+    <item for="uninstall">ALTER TABLE  `?:products` DROP `EANcode`</item>
+  </queries>
 </addon>
