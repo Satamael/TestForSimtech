@@ -1,5 +1,4 @@
-﻿<?php
-
+<?php
 if (!defined('BOOTSTRAP')) { die('Access denied'); }
 
-fn_register_hooks(detailed_content);	
+function fn_EANadd_detailed_content(){}
