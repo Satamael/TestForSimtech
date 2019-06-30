@@ -79,7 +79,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 }
 
             }
-            $product_id = fn_update_product($product_data, $_REQUEST['product_id'], DESCR_SL);
+					
+				$product_id = fn_update_product($product_data, $_REQUEST['product_id'], DESCR_SL);
+				$product_id = fn_update_product($_REQUEST['product_data'], $_REQUEST['product_id'], DESCR_SL);
 
             if ($product_id === false) {
                 // Some error occurred
