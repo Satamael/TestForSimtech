@@ -1,5 +1,5 @@
-msgid "EANadd"
-msgstr "EAN код"
+п»їmsgid "EANadd"
+msgstr "EAN РєРѕРґ"
 "Project-Id-Version: cs-cart-latest\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
@@ -14,10 +14,10 @@ msgstr "EAN код"
 
 msgctxt "Addons::name::EANadd"
 msgid "EANadd"
-msgstr "EAN код"
+msgstr "EAN РєРѕРґ"
 
 msgctxt "Addons::description::EANadd"
 msgid "A add-on for easier add EAN code for goods"
-msgstr "Модуль для лёгкого добавления EAN кода к товару"
+msgstr "РњРѕРґСѓР»СЊ РґР»СЏ Р»С‘РіРєРѕРіРѕ РґРѕР±Р°РІР»РµРЅРёСЏ EAN РєРѕРґР° Рє С‚РѕРІР°СЂСѓ"
 
 

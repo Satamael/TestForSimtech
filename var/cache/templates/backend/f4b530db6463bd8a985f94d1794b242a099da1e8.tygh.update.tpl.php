@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2019-06-29 20:26:32
+<?php /* Smarty version Smarty-3.1.21, created on 2019-06-30 11:12:27
          compiled from "C:\Users\Demon\Downloads\OpenServer\OSPanel\domains\localhost\cscart\design\backend\templates\views\products\update.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2056102625d166a4d9c7076-14699674%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f4b530db6463bd8a985f94d1794b242a099da1e8' => 
     array (
       0 => 'C:\\Users\\Demon\\Downloads\\OpenServer\\OSPanel\\domains\\localhost\\cscart\\design\\backend\\templates\\views\\products\\update.tpl',
-      1 => 1561829184,
+      1 => 1561882298,
       2 => 'tygh',
     ),
   ),
@@ -771,7 +771,7 @@ echo $_smarty_tpl->getSubTemplate ("common/tooltip.tpl", $_smarty_tpl->cache_id,
             <?php $_smarty_tpl->smarty->_tag_stack[] = array('hook', array('name'=>"products:update_addons_section")); $_block_repeat=true; echo smarty_block_hook(array('name'=>"products:update_addons_section"), null, $_smarty_tpl, $_block_repeat);while ($_block_repeat) { ob_start();?>
 
             <div id="content_addons">
-			<p>EAN code будет здесь</p>
+			
                 <?php $_smarty_tpl->smarty->_tag_stack[] = array('hook', array('name'=>"products:detailed_content")); $_block_repeat=true; echo smarty_block_hook(array('name'=>"products:detailed_content"), null, $_smarty_tpl, $_block_repeat);while ($_block_repeat) { ob_start();?>
 
                 <?php $_block_content = ob_get_clean(); $_block_repeat=false; echo smarty_block_hook(array('name'=>"products:detailed_content"), $_block_content, $_smarty_tpl, $_block_repeat);  } array_pop($_smarty_tpl->smarty->_tag_stack);?>
