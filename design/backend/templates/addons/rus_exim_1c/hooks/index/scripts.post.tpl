@@ -1,1 +1,0 @@
-{script src="js/addons/rus_exim_1c/func.js"}

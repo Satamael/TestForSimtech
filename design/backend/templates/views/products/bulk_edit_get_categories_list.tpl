@@ -1,1 +1,0 @@
-{include file="views/products/components/bulk_edit/categories.tpl"}
